@@ -1,13 +1,41 @@
-" This is my vimconfig
-
-
+" This is my vimrc
+" Care !Work in Progressi!
 
 " some basics
-	set nocompatible
-	set number relativenumber
+set nocompatible
+set number
+syntax on
+set autoindent
 
-"enable autocompletion
-	set wildmode=longest,list,full
+" enable wildmenu with autocompletion
+set wildmenu
+set wildmode=list:longest,full
 
-" Split open at bottom and right
-	set splitbelow splitright
+" show tabs, precedes and trailing spaces
+set listchars=tab:┄\┄,nbsp:␣,trail:•,precedes:«,extends:»
+set list
+
+" UTF8
+set encoding=utf-8
+
+" autofolding dependend on syntax
+set foldmethod=syntax
+
+" highlight search results
+set hlsearch
+
+" tab and space settings
+"set shiftwidth=4
+" remove a tab(4 spaces) with one return press
+set softtabstop=8
+" tabs are spaces
+"set expandtab
+
+
+" display the cursor position on the last line of the screen or in the status
+" line of a window
+set ruler
+
+" Change splitside
+set splitbelow
+set splitright
