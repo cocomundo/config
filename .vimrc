@@ -50,6 +50,9 @@ set novisualbell
 "set spell
 "set spelllang=de
 
+" always vertical diffsplits
+set diffopt=vertical
+
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search : ctrl + l
 nnoremap <C-L> :nohl<CR><C-L>
