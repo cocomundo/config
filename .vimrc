@@ -39,3 +39,17 @@ set ruler
 " Change splitside
 set splitbelow
 set splitright
+
+" Ignore case when searching
+set ignorecase
+
+" No annoying sound on errors
+set novisualbell
+
+" spell checks
+"set spell
+"set spelllang=de
+
+" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" next search : ctrl + l
+nnoremap <C-L> :nohl<CR><C-L>
