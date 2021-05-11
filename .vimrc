@@ -1,5 +1,4 @@
 " This is my vimrc
-" Care !Work in Progressi!
 
 " some basics
 set nocompatible
@@ -56,3 +55,7 @@ set diffopt=vertical
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search : ctrl + l
 nnoremap <C-L> :nohl<CR><C-L>
+
+" !CTAGS NECESSARY!
+" open definition in vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>"
