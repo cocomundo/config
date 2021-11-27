@@ -18,15 +18,21 @@ set list
 set encoding=utf-8
 
 " autofolding dependend on syntax
-set foldmethod=syntax
+"set foldmethod=syntax
 
 " highlight search results
 set hlsearch
 
+" show partial results of search
+set incsearch
+
+" ...
+set ignorecase
+
 " tab and space settings
-"set shiftwidth=4
+set shiftwidth=4
 " remove a tab(4 spaces) with one return press
-set softtabstop=8
+set softtabstop=4
 " tabs are spaces
 "set expandtab
 
@@ -44,6 +50,7 @@ set ignorecase
 
 " No annoying sound on errors
 set novisualbell
+set noerrorbells
 
 " spell checks
 "set spell
