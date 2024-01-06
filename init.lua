@@ -1,31 +1,4 @@
-" This is my nvim config for webdev
-"*** Vim-Plug Plugins (https://github.com/junegunn/vim-plug) ***
-call plug#begin()
-" Theme Sonokai
-Plug 'sainnhe/sonokai'
-
-" commenting text
-Plug 'tpope/vim-commentary'
-
-" Autocomplete for html/css/js and beautification
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
-let g:coc_global_extensions = ['coc-eslint', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
-call plug#end()
-
-"*** Plugin Config ***
-" Sonokai Theme - Important!!
-if has('termguicolors')
-  set termguicolors
-endif
-" The configuration options should be placed before `colorscheme sonokai`.
-let g:sonokai_style = 'andromeda'
-colorscheme sonokai
-
-" Prettier Command
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
-
+vim.cmd[[
 " some basics
 set nocompatible
 set number
@@ -93,3 +66,4 @@ nnoremap <C-L> :nohl<CR><C-L>
 " open definition in vertical split
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>"
 
+]]
